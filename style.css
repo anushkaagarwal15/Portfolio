@@ -1,0 +1,206 @@
+body{
+    margin: 0px;
+    
+}
+
+/* Body Header */
+
+#body-header{
+    height: 70vh;
+    background-image: url('img1.jpg');
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+/* Horizontal Lists */
+
+.navbar{
+    color: black;
+    list-style-type:none;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 0px 30px 30px 0px;
+    font-size: 27px;
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    
+    /* border-bottom: 4s; */
+    
+    
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color:lightgray;
+    border-bottom: 1px solid white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-family: verdana;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i{
+padding: 2px;
+margin-top: 8px;
+font-size: 1.5rem;
+
+/* Make icons circular in shape */
+border-radius: 50%;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 1px 1px 6px 4px rgba(241, 226, 224, 0.8) ;
+    /* horizontal offset, vertical offset, blur,spread,color*/
+
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* New way */
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+section:nth-child(2n){
+    background-color: rgb(251, 244, 245);
+}
+
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.my-image{
+    height: 17rem;
+    width: 17rem;
+    margin: auto;
+    margin-top: -22vh;
+} 
+
+.my-image img{
+    height: 100%;
+    width: 100%;
+   border-radius: 50%;
+}
+
+.my-self{
+    text-align: justify;
+    margin: 0px 150px 0px 150px;
+    font-size: 20px;
+    padding: 3px;
+    word-spacing: 2px;
+}
+
+/* Common Margin Classes */
+.mb75px{
+    margin-bottom: 75px;
+}
+
+
+
+.headings{
+    font-weight: 400;
+    width: auto;
+    padding: 20px 10px 10px;
+    
+    
+}
+
+.headings span{
+    font-size: 50px;
+    color: rgb(44, 44, 247);
+    margin-right: 0.5rem;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.mb-blue{
+    background-color: blue;
+}
+.skills-display{
+    width: 70%;
+    /* height: 100px; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-shrink: inherit;
+}
+
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem ;
+
+    /* border: 2px solid black; */
+}
+
+/* Percentage Classes */
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+
+
+/* writing to direct child of that parent only  */
+.skill-progress div{
+border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.ninety-two-percent{
+ width: 92%;
+ height: inherit;
+}
+
+.eighty-two-percent{
+    width: 82%;
+    height: inherit;
+}
+
+.thirty-percent{
+    width: 30%;
+    height: inherit;
+}
